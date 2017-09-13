@@ -1,0 +1,53 @@
+doctype html
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+html(lang="en")
+
+	head
+		include modules/head.pug
+	body
+		header
+			.mob-trigger
+				span
+			.logo Logo big image
+			nav
+				ul.menu
+					li.menu__item
+						a(href="#") Menu1
+					li.menu__item
+						a(href="#") Menu2
+					li.menu__item
+						a(href="#") Menu3
+			.help Help button
+
+		section.content
+			aside.block1
+				h2.block__title Block 1
+				p.block__subtitle 250px
+			div.block2
+				h2.block__title Block 2
+				ul.profiles
+					li.profiles__item
+						.avatar
+						.text
+							p Here goes very long text that shoudn't stretch this block nor by width nor by height. It should be cut by tree periods like this ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iure, autem commodi omnis eveniet beatae officia suscipit aspernatur nobis recusandae. Id reprehenderit at, doloremque enim!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nulla. Cumque expedita animi harum ducimus ut, tempora unde praesentium mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe doloribus, veritatis dicta.
+					li.profiles__item
+						.avatar
+						.text ...
+					li.profiles__item
+						.avatar
+						.text ...
+					li.profiles__item
+						.avatar
+						.text ...
+				.description Clicking on each of the blocks above should toggle its class name. Show it by changing background color. Write a JS function that does it once and apply it to each block.
+				.next-task
+					a(href="next_page.html") Click here to see next task
+			aside.block3
+				h2.block__title Block 3
+				p.block__subtitle 200px
+		footer
+
+		include modules/scripts.pug

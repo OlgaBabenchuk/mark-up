@@ -1,0 +1,24 @@
+doctype html
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+html(lang="en")
+
+head
+	include modules/head.pug
+body
+	.article
+		.article__img-wpr
+			.article__img
+		.article__content
+			h4.article__title The title
+			.article__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum suscipit earum ipsam, voluptatibus. Distinctio molestias, quo ratione reprehenderit numquam, ad dolor minima!
+			.check-block
+				input(type="checkbox" value="1" id="input_1" checked)
+				label(for='input_1' tabindex="-1")
+					span.toggleSwitch
+					span Checkbox
+			button Button
+
+include modules/scripts.pug
