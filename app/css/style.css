@@ -893,6 +893,8 @@ nav
 
 .next-task
 {
+    font-size: 2.5em; 
+
     margin-top: 1em;
 }
 .next-task a
